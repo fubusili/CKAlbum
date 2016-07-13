@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B0FEAB621CE85339001D0972 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FEAB611CE85339001D0972 /* main.m */; };
+		B0FEAB651CE85339001D0972 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FEAB641CE85339001D0972 /* AppDelegate.m */; };
+		B0FEAB6B1CE85339001D0972 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0FEAB691CE85339001D0972 /* Main.storyboard */; };
+		B0FEAB6D1CE85339001D0972 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0FEAB6C1CE85339001D0972 /* Assets.xcassets */; };
+		B0FEAB701CE85339001D0972 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0FEAB6E1CE85339001D0972 /* LaunchScreen.storyboard */; };
+		B0FEAB7B1CE85339001D0972 /* CKAlbumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FEAB7A1CE85339001D0972 /* CKAlbumTests.m */; };
+		B0FEAB861CE85339001D0972 /* CKAlbumUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FEAB851CE85339001D0972 /* CKAlbumUITests.m */; };
+		B0FEAB981CE85509001D0972 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FEAB971CE85509001D0972 /* ViewController.m */; };
+		B0FEAB9C1CE85750001D0972 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FEAB9B1CE85750001D0972 /* Album.m */; };
+		B0FEAB9F1CE85BF1001D0972 /* AlbumView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FEAB9E1CE85BF1001D0972 /* AlbumView.m */; };
+		B0FEABA31CE861FD001D0972 /* LibraryAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FEABA21CE861FD001D0972 /* LibraryAPI.m */; };
+		B0FEABA61CE863F4001D0972 /* PersistencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FEABA51CE863F4001D0972 /* PersistencyManager.m */; };
+		B0FEABA91CE86E0D001D0972 /* HTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FEABA81CE86E0D001D0972 /* HTTPClient.m */; };
+		B0FEABAC1CE8B7A9001D0972 /* Album+TableRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FEABAB1CE8B7A9001D0972 /* Album+TableRepresentation.m */; };
+		B0FEABAF1CE8C1B0001D0972 /* HorizontalScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FEABAE1CE8C1B0001D0972 /* HorizontalScroller.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0FEAB771CE85339001D0972 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0FEAB551CE85338001D0972 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0FEAB5C1CE85338001D0972;
+			remoteInfo = CKAlbum;
+		};
+		B0FEAB821CE85339001D0972 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0FEAB551CE85338001D0972 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0FEAB5C1CE85338001D0972;
+			remoteInfo = CKAlbum;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B0FEAB5D1CE85338001D0972 /* CKAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CKAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0FEAB611CE85339001D0972 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B0FEAB631CE85339001D0972 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B0FEAB641CE85339001D0972 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B0FEAB6A1CE85339001D0972 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B0FEAB6C1CE85339001D0972 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0FEAB6F1CE85339001D0972 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B0FEAB711CE85339001D0972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0FEAB761CE85339001D0972 /* CKAlbumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CKAlbumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0FEAB7A1CE85339001D0972 /* CKAlbumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKAlbumTests.m; sourceTree = "<group>"; };
+		B0FEAB7C1CE85339001D0972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0FEAB811CE85339001D0972 /* CKAlbumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CKAlbumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0FEAB851CE85339001D0972 /* CKAlbumUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKAlbumUITests.m; sourceTree = "<group>"; };
+		B0FEAB871CE85339001D0972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0FEAB961CE85509001D0972 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B0FEAB971CE85509001D0972 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B0FEAB9A1CE85750001D0972 /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
+		B0FEAB9B1CE85750001D0972 /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
+		B0FEAB9D1CE85BF1001D0972 /* AlbumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumView.h; sourceTree = "<group>"; };
+		B0FEAB9E1CE85BF1001D0972 /* AlbumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumView.m; sourceTree = "<group>"; };
+		B0FEABA11CE861FD001D0972 /* LibraryAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryAPI.h; sourceTree = "<group>"; };
+		B0FEABA21CE861FD001D0972 /* LibraryAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryAPI.m; sourceTree = "<group>"; };
+		B0FEABA41CE863F4001D0972 /* PersistencyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistencyManager.h; sourceTree = "<group>"; };
+		B0FEABA51CE863F4001D0972 /* PersistencyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistencyManager.m; sourceTree = "<group>"; };
+		B0FEABA71CE86E0D001D0972 /* HTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPClient.h; sourceTree = "<group>"; };
+		B0FEABA81CE86E0D001D0972 /* HTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPClient.m; sourceTree = "<group>"; };
+		B0FEABAA1CE8B7A9001D0972 /* Album+TableRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Album+TableRepresentation.h"; sourceTree = "<group>"; };
+		B0FEABAB1CE8B7A9001D0972 /* Album+TableRepresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Album+TableRepresentation.m"; sourceTree = "<group>"; };
+		B0FEABAD1CE8C1B0001D0972 /* HorizontalScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalScroller.h; sourceTree = "<group>"; };
+		B0FEABAE1CE8C1B0001D0972 /* HorizontalScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalScroller.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0FEAB5A1CE85338001D0972 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0FEAB731CE85339001D0972 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0FEAB7E1CE85339001D0972 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B0FEAB541CE85338001D0972 = {
+			isa = PBXGroup;
+			children = (
+				B0FEAB5F1CE85338001D0972 /* CKAlbum */,
+				B0FEAB791CE85339001D0972 /* CKAlbumTests */,
+				B0FEAB841CE85339001D0972 /* CKAlbumUITests */,
+				B0FEAB5E1CE85338001D0972 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B0FEAB5E1CE85338001D0972 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0FEAB5D1CE85338001D0972 /* CKAlbum.app */,
+				B0FEAB761CE85339001D0972 /* CKAlbumTests.xctest */,
+				B0FEAB811CE85339001D0972 /* CKAlbumUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0FEAB5F1CE85338001D0972 /* CKAlbum */ = {
+			isa = PBXGroup;
+			children = (
+				B0FEABA01CE86159001D0972 /* API */,
+				B0FEAB991CE85712001D0972 /* Models */,
+				B0FEAB951CE85484001D0972 /* Views */,
+				B0FEAB931CE85484001D0972 /* Controllers */,
+				B0FEAB631CE85339001D0972 /* AppDelegate.h */,
+				B0FEAB641CE85339001D0972 /* AppDelegate.m */,
+				B0FEAB601CE85338001D0972 /* Supporting Files */,
+			);
+			path = CKAlbum;
+			sourceTree = "<group>";
+		};
+		B0FEAB601CE85338001D0972 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0FEAB691CE85339001D0972 /* Main.storyboard */,
+				B0FEAB6C1CE85339001D0972 /* Assets.xcassets */,
+				B0FEAB6E1CE85339001D0972 /* LaunchScreen.storyboard */,
+				B0FEAB711CE85339001D0972 /* Info.plist */,
+				B0FEAB611CE85339001D0972 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0FEAB791CE85339001D0972 /* CKAlbumTests */ = {
+			isa = PBXGroup;
+			children = (
+				B0FEAB7A1CE85339001D0972 /* CKAlbumTests.m */,
+				B0FEAB7C1CE85339001D0972 /* Info.plist */,
+			);
+			path = CKAlbumTests;
+			sourceTree = "<group>";
+		};
+		B0FEAB841CE85339001D0972 /* CKAlbumUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B0FEAB851CE85339001D0972 /* CKAlbumUITests.m */,
+				B0FEAB871CE85339001D0972 /* Info.plist */,
+			);
+			path = CKAlbumUITests;
+			sourceTree = "<group>";
+		};
+		B0FEAB931CE85484001D0972 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B0FEAB961CE85509001D0972 /* ViewController.h */,
+				B0FEAB971CE85509001D0972 /* ViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B0FEAB951CE85484001D0972 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B0FEAB9D1CE85BF1001D0972 /* AlbumView.h */,
+				B0FEAB9E1CE85BF1001D0972 /* AlbumView.m */,
+				B0FEABAD1CE8C1B0001D0972 /* HorizontalScroller.h */,
+				B0FEABAE1CE8C1B0001D0972 /* HorizontalScroller.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B0FEAB991CE85712001D0972 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B0FEAB9A1CE85750001D0972 /* Album.h */,
+				B0FEAB9B1CE85750001D0972 /* Album.m */,
+				B0FEABAA1CE8B7A9001D0972 /* Album+TableRepresentation.h */,
+				B0FEABAB1CE8B7A9001D0972 /* Album+TableRepresentation.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B0FEABA01CE86159001D0972 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B0FEABA11CE861FD001D0972 /* LibraryAPI.h */,
+				B0FEABA21CE861FD001D0972 /* LibraryAPI.m */,
+				B0FEABA71CE86E0D001D0972 /* HTTPClient.h */,
+				B0FEABA81CE86E0D001D0972 /* HTTPClient.m */,
+				B0FEABA41CE863F4001D0972 /* PersistencyManager.h */,
+				B0FEABA51CE863F4001D0972 /* PersistencyManager.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0FEAB5C1CE85338001D0972 /* CKAlbum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0FEAB8A1CE85339001D0972 /* Build configuration list for PBXNativeTarget "CKAlbum" */;
+			buildPhases = (
+				B0FEAB591CE85338001D0972 /* Sources */,
+				B0FEAB5A1CE85338001D0972 /* Frameworks */,
+				B0FEAB5B1CE85338001D0972 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CKAlbum;
+			productName = CKAlbum;
+			productReference = B0FEAB5D1CE85338001D0972 /* CKAlbum.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B0FEAB751CE85339001D0972 /* CKAlbumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0FEAB8D1CE85339001D0972 /* Build configuration list for PBXNativeTarget "CKAlbumTests" */;
+			buildPhases = (
+				B0FEAB721CE85339001D0972 /* Sources */,
+				B0FEAB731CE85339001D0972 /* Frameworks */,
+				B0FEAB741CE85339001D0972 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0FEAB781CE85339001D0972 /* PBXTargetDependency */,
+			);
+			name = CKAlbumTests;
+			productName = CKAlbumTests;
+			productReference = B0FEAB761CE85339001D0972 /* CKAlbumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B0FEAB801CE85339001D0972 /* CKAlbumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0FEAB901CE85339001D0972 /* Build configuration list for PBXNativeTarget "CKAlbumUITests" */;
+			buildPhases = (
+				B0FEAB7D1CE85339001D0972 /* Sources */,
+				B0FEAB7E1CE85339001D0972 /* Frameworks */,
+				B0FEAB7F1CE85339001D0972 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0FEAB831CE85339001D0972 /* PBXTargetDependency */,
+			);
+			name = CKAlbumUITests;
+			productName = CKAlbumUITests;
+			productReference = B0FEAB811CE85339001D0972 /* CKAlbumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0FEAB551CE85338001D0972 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = CK;
+				TargetAttributes = {
+					B0FEAB5C1CE85338001D0972 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					B0FEAB751CE85339001D0972 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B0FEAB5C1CE85338001D0972;
+					};
+					B0FEAB801CE85339001D0972 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B0FEAB5C1CE85338001D0972;
+					};
+				};
+			};
+			buildConfigurationList = B0FEAB581CE85338001D0972 /* Build configuration list for PBXProject "CKAlbum" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B0FEAB541CE85338001D0972;
+			productRefGroup = B0FEAB5E1CE85338001D0972 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0FEAB5C1CE85338001D0972 /* CKAlbum */,
+				B0FEAB751CE85339001D0972 /* CKAlbumTests */,
+				B0FEAB801CE85339001D0972 /* CKAlbumUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0FEAB5B1CE85338001D0972 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0FEAB701CE85339001D0972 /* LaunchScreen.storyboard in Resources */,
+				B0FEAB6D1CE85339001D0972 /* Assets.xcassets in Resources */,
+				B0FEAB6B1CE85339001D0972 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0FEAB741CE85339001D0972 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0FEAB7F1CE85339001D0972 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0FEAB591CE85338001D0972 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0FEABA31CE861FD001D0972 /* LibraryAPI.m in Sources */,
+				B0FEAB981CE85509001D0972 /* ViewController.m in Sources */,
+				B0FEAB9F1CE85BF1001D0972 /* AlbumView.m in Sources */,
+				B0FEAB651CE85339001D0972 /* AppDelegate.m in Sources */,
+				B0FEAB621CE85339001D0972 /* main.m in Sources */,
+				B0FEABAF1CE8C1B0001D0972 /* HorizontalScroller.m in Sources */,
+				B0FEAB9C1CE85750001D0972 /* Album.m in Sources */,
+				B0FEABAC1CE8B7A9001D0972 /* Album+TableRepresentation.m in Sources */,
+				B0FEABA91CE86E0D001D0972 /* HTTPClient.m in Sources */,
+				B0FEABA61CE863F4001D0972 /* PersistencyManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0FEAB721CE85339001D0972 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0FEAB7B1CE85339001D0972 /* CKAlbumTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0FEAB7D1CE85339001D0972 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0FEAB861CE85339001D0972 /* CKAlbumUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B0FEAB781CE85339001D0972 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0FEAB5C1CE85338001D0972 /* CKAlbum */;
+			targetProxy = B0FEAB771CE85339001D0972 /* PBXContainerItemProxy */;
+		};
+		B0FEAB831CE85339001D0972 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0FEAB5C1CE85338001D0972 /* CKAlbum */;
+			targetProxy = B0FEAB821CE85339001D0972 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B0FEAB691CE85339001D0972 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0FEAB6A1CE85339001D0972 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B0FEAB6E1CE85339001D0972 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0FEAB6F1CE85339001D0972 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B0FEAB881CE85339001D0972 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B0FEAB891CE85339001D0972 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0FEAB8B1CE85339001D0972 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CKAlbum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clark.CKAlbum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B0FEAB8C1CE85339001D0972 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CKAlbum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clark.CKAlbum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B0FEAB8E1CE85339001D0972 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CKAlbumTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clark.CKAlbumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CKAlbum.app/CKAlbum";
+			};
+			name = Debug;
+		};
+		B0FEAB8F1CE85339001D0972 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CKAlbumTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clark.CKAlbumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CKAlbum.app/CKAlbum";
+			};
+			name = Release;
+		};
+		B0FEAB911CE85339001D0972 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CKAlbumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clark.CKAlbumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CKAlbum;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B0FEAB921CE85339001D0972 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CKAlbumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clark.CKAlbumUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CKAlbum;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0FEAB581CE85338001D0972 /* Build configuration list for PBXProject "CKAlbum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0FEAB881CE85339001D0972 /* Debug */,
+				B0FEAB891CE85339001D0972 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0FEAB8A1CE85339001D0972 /* Build configuration list for PBXNativeTarget "CKAlbum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0FEAB8B1CE85339001D0972 /* Debug */,
+				B0FEAB8C1CE85339001D0972 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B0FEAB8D1CE85339001D0972 /* Build configuration list for PBXNativeTarget "CKAlbumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0FEAB8E1CE85339001D0972 /* Debug */,
+				B0FEAB8F1CE85339001D0972 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B0FEAB901CE85339001D0972 /* Build configuration list for PBXNativeTarget "CKAlbumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0FEAB911CE85339001D0972 /* Debug */,
+				B0FEAB921CE85339001D0972 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0FEAB551CE85338001D0972 /* Project object */;
+}
